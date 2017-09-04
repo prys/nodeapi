@@ -3,11 +3,9 @@ kind: Deployment
 metadata:
   name: nginx-deployment
 spec:
-  replicas: 2 # tells deployment to run 2 pods matching the template
-  template: # create pods using pod definition in this template
+  replicas: 2
+  template:
     metadata:
-      # unlike pod-nginx.yaml, the name is not included in the meta data as a unique name is
-      # generated from the deployment name
       labels:
         app: mynode
     spec:
@@ -16,3 +14,5 @@ spec:
         image: prys/mynode
         ports:
         - containerPort: 3412
+        command: ["node"]
+        args: ["/root/node/api.js"]
