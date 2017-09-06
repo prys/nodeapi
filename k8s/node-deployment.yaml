@@ -1,7 +1,7 @@
-apiVersion: apps/v1beta1
+apiVersion: extensions/v1beta1
 kind: Deployment
 metadata:
-  name: nginx-deployment
+  name: mynode-deployment
 spec:
   replicas: 2
   template:
@@ -16,3 +16,14 @@ spec:
         - containerPort: 3412
         command: ["node"]
         args: ["/root/node/api.js"]
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: mynode-service
+spec:
+  type: NodePort
+  - port: 3412
+    protocol: TCP
+  selector:
+    app: mynode
