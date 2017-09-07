@@ -1,12 +1,8 @@
-import httplib
 import time
+import urllib
 
 var = 1
 while var==1:
-	conn = httplib.HTTPConnection("quotes.prys.me.uk:3412")
-	conn.request("HEAD", "/")
-	r1 = conn.getresponse()
-	if str(r1.status) != "200":
-		print "broken"
+	print urllib.urlopen("http://quotes.prys.me.uk:3412/quote/random").getcode()
 	time.sleep(5)
 
