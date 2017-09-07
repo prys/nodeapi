@@ -23,6 +23,7 @@ metadata:
   name: mynode-service
 spec:
   type: NodePort
+  ports:
   - port: 3412
     protocol: TCP
   selector:
