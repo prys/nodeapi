@@ -12,8 +12,6 @@ spec:
       containers:
       - name: mynode
         image: prys/mynode
-        ports:
-        - containerPort: 3412
         command: ["node"]
         args: ["/root/node/api.js"]
 ---
