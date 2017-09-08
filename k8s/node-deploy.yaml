@@ -14,17 +14,3 @@ spec:
         image: prys/mynode
         command: ["node"]
         args: ["/root/node/api.js"]
----
-apiVersion: v1
-kind: Service
-metadata:
-  name: mynode-service
-spec:
-  type: NodePort
-  ports:
-  - port: 3412
-    protocol: TCP
-  selector:
-    app: mynode
-  labels:
-    svcname: mynode-service
