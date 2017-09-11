@@ -2,7 +2,7 @@ kind: NetworkPolicy
 apiVersion: extensions/v1beta1
 metadata:
   name: default-deny
-  namespace: prys
+  namespace: prysns
 spec:
   podSelector:
 
