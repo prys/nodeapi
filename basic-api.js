@@ -11,7 +11,7 @@ var quotes = [
   { author : 'Rhiannon Williams', text : "I'm going to be a film star."},
   { author : 'Teleri Williams', text : "I know a girl called Binky Bonks."},
   { author : 'Jo Williams', text : "Dw i'n dysgu Cymraeg"},
-  { author : 'Donald Trump' text : "I'm going to build a wall"}
+  { author : 'Donald Trump', text : "I'm going to build a wall"}
 ];
 
 app.get('/', function(req, res) {
