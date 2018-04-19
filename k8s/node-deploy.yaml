@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: mynode-deployment
 spec:
-  replicas: 2
+  replicas: 1
   template:
     metadata:
       labels:
@@ -14,3 +14,8 @@ spec:
         image: prys/mynode
         command: ["node"]
         args: ["/root/node/api.js"]
+        env:
+          - name: MY_POD_IP
+            valueFrom:
+              fieldRef:
+                fieldPath: status.podIP

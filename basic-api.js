@@ -7,10 +7,10 @@ var quotes = [
   { author : 'Unknown', text : "Even the greatest was once a beginner. Don't be afraid to take that first step."},
   { author : 'Neale Donald Walsch', text : "You are afraid to die, and you're afraid to live. What a way to exist."},
   { author : 'Prys Williams', text : "Kubernetes is harder than you think."},
-  { author : 'Steffan Williams', text : "I really really want to be a fighter pilot."},
-  { author : 'Rhiannon Williams', text : "I'm going to be a film star."},
-  { author : 'Teleri Williams', text : "I know a girl called Binky Bonks."},
-  { author : 'Jo Williams', text : "Dw i'n dysgu Cymraeg"},
+  { author : 'Jim Williams', text : "I really really want to be a fighter pilot."},
+  { author : 'Bob Williams', text : "I'm going to be a film star."},
+  { author : 'Steve Williams', text : "I know a girl called Binky Bonks."},
+  { author : 'Fred Williams', text : "Dw i'n dysgu Cymraeg"},
   { author : 'Donald Trump', text : "I'm going to build a wall"}
 ];
 
