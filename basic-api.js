@@ -11,7 +11,8 @@ var quotes = [
   { author : 'Bob Williams', text : "I'm going to be a film star"},
   { author : 'Steve Williams', text : "I know a girl called Binky Bonks"},
   { author : 'Fred Williams', text : "Dw i'n dysgu Cymraeg"},
-  { author : 'Donald Trump', text : "I'm going to build a wall"}
+  { author : 'Donald Trump', text : "I'm going to build a wall"},
+  { author : 'Henry Ford', text : "Any colour, so long as it's black"}
 ];
 
 app.get('/', function(req, res) {
