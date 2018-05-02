@@ -1,0 +1,6 @@
+pipeline:
+  deploy mynode:
+    image: prys/myalpine
+    commands:
+      kubectl create namespace node
+      kubectl run mynode --image=prys/mynode -n node
