@@ -9,5 +9,5 @@ spec:
       paths:
       - path: /quote
         backend:
-          serviceName: nodeapi-svc.node
+          serviceName: node-svc
           servicePort: 3412
