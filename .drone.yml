@@ -4,3 +4,4 @@ pipeline:
     commands:
       - kubectl apply -f node-deploy.yml -n node
       - kubectl apply -f node-svc.yaml -n node
+      - kubectl apply -f node-ingress.yaml -n node
