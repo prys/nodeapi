@@ -2,5 +2,5 @@ pipeline:
   deploy mynode:
     image: prys/myalpine
     commands:
-      - kubectl create namespace node
-      - kubectl run mynode --image=prys/mynode -n node
+      - kubectl apply -f node-deploy.yml -n node
+      - kubectl apply -f node-svc.yaml -n node
