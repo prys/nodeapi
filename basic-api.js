@@ -13,7 +13,8 @@ var quotes = [
   { author : 'Fred Williams', text : "Dw i'n dysgu Cymraeg"},
   { author : 'Donald Trump', text : "I'm going to build a wall"},
   { author : 'Henry Ford', text : "Any colour, so long as it's black"},
-  { author : 'Ford Prefect', text : "Don't Panic"}
+  { author : 'Ford Prefect', text : "Don't Panic"},
+  { author:  'Albert Einstein', text: "Great spirits have always encountered violent opposition from mediocre minds."}
 ];
 
 app.get('/', function(req, res) {
