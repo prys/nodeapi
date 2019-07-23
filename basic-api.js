@@ -14,7 +14,8 @@ var quotes = [
   { author : 'Donald Trump', text : "I'm going to build a wall"},
   { author : 'Henry Ford', text : "Any colour, so long as it's black"},
   { author : 'Ford Prefect', text : "Don't Panic"},
-  { author:  'Albert Einstein', text: "Great spirits have always encountered violent opposition from mediocre minds."}
+  { author : 'Albert Einstein', text: "Great spirits have always encountered violent opposition from mediocre minds."},
+  { author : 'Freddy Mercury', text: "Another one bites the dust"}
 ];
 
 app.get('/', function(req, res) {
