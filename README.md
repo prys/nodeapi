@@ -1,2 +1,2 @@
 # nodeapi
-Simple Node.js api
+simple Node.js api
