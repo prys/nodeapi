@@ -18,6 +18,12 @@ var quotes = [
   { author : 'Freddy Mercury', text: "Another one bites the dust"}
 ];
 
+app.use(function(req, res, next){
+  var ip = req.connection.remoteAddress;
+  console.log(ip);
+});
+
+
 app.get('/', function(req, res) {
   res.json(quotes);
 });
